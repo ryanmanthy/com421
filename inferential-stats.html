@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">Research Paper Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="topic.html">Topic <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="research.html">Research <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="references.html">References <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="style.html">Style <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="layout.html">Layout <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="modality.html">Modality <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="professionalization.html">Professionalization <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="site-container">
+
+            <!-- Run inferential statistics -->
+    <h2 id="inferential-statistics">Run inferential statistics</h2>
+    <p>Open PASW and upload the spreadsheet. (IIT labs in Stuart Building, room 112, have PASW. You can also download a 30-day free trial.)</p>
+    <ol>
+        <li>When PASW starts, it will prompt you for a data source. Select <b>Open an existing data source > More Files...</b>></li>
+        <li>Set the file type to Excel, then find and open the file.</li>
+        <li>From the list, select the Formatted_Data worksheet. Click OK. You should now see the dataset.</li>
+    </ol>
+    <p>The most commonly used statistical methods and tests are found under the Analyze menu in the standard toolbar.</p>
+    <p>Figure 5 shows where to find some common statistical methods and tests. Under PASW's <b>Analyze</b>> menu, see if you can also find the following:</p>
+    <ol>
+        <li>Wilcoxon-Mann-Whitney test</li>
+        <li>Simple linear regression</li>
+        <li>Non-parametric correlation</li>
+    </ol>
+    <figure>
+        <img src="images/datalesson_fig5.png" alt="Data Lesson Figure 5">
+        <figcaption>Don't assume PASW doesn't run a given test. Many are located under broader statistical classifications.</figcaption>
+    </figure>
+
+    <!-- SIDEBAR -->
+
+    <p><b>Consult <a href="http://www.ats.ucla.edu/stat/mult_pkg/whatstat/default.htm">UCLA's <i>Choosing the Correct Statistic</i></a> to ensure the statistical anlaysis is appropriate for your research question(s), variables of interest, and associated data types.</b></p>
+
+    <!-- END SIDEBAR -->
+
+    <p>You should have determined that the Kruskal-Wallis one-way analysis of variance is the appropriate test. Go to Analyze <b> Nonparametric Tests > K Independent Samples...</b> A new window will open prompting you to select the variables (by column name) to be tested.</p>
+    <ol>
+        <li>Select the <em>perc_usefulness</em> variable from the scrollable list on the left, and click the top arrow to move it to the Test Variable List (i.e. dependent variable).</li>
+        <li>Select the <em>free_play</em> variable from the scrollable list, and click the bottom arrow to move it to the Grouping Variable section (i.e. independent variable).</li>
+        <li>Click <b>Define Range</b>..., and enter "0" in the Minimum field and "1" in the Maximum field. This specifies the two categorical variables to be tested. Your screen should now look like Figure 6. Click Continue.</li>
+    </ol>
+    <figure>
+        <img src="images/datalesson_fig6.png" alt="Data Lesson Figure 6">
+        <figcaption>For Kruskal-Wallis, an independent (free_play) and a dependent variable (perc_usefulness) are selected.</figcaption>
+    </figure>
+    <p>Click OK to display the statistical analysis results to new viewing window. Your results screen should look like Figure 7. Because statistical analysis output contains many numerical components (some of which must be cited in formal reports), it is a good idea to save it to a format independent of the PASW software. To save the results, go to <b>File > Export</b>. Change Document Type to the desired output format (Word, Excel, PDF, etc.), then click OK.</p>
+    <figure>
+        <img src="images/datalesson_fig7.png" alt="Data Lesson Figure 7">
+        <figcaption>PASW allows users to export statistics to common document types.</figcaption>
+    </figure>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="descriptive-stats.html" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="data-analysis.html">Data Analysis</a></li>
+          <li class="page-item"><a class="page-link" href="descriptive-stats.html">Descriptive Statistics</a></li>
+          <li class="page-item"><a class="page-link" href="inferential-stats.html">Inferential Statistics</a></li>
+          <li class="page-item">
+            <a class="page-link" href="data.html">Next</a>
+          </li>
+        </ul>
+    </nav>
+
+    
+    </main>
+
+    <footer>
+        <p>Ryan Manthy | COM421 Sustainable Information Project </p>
+    </footer>
+</body>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <title>Data</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -54,46 +54,41 @@
     </header>
     <main class="site-container">
 
-        <!-- Getting Started -->
-        <h2 id="getting-started">Getting Started</h2>
-        <h3 id="access-library">Accessing Library Services</h3>
-        <p>If you are a newly admitted student and you have not obtained an IIT Hawk Card, details for 
-            doing so can be found at the Hawk Card Homepage. You will need your Hawk Card number to 
-            access some library services <br><br> Even if you don't have a Hawk Card, you can still 
-            access online journals and perform all of the search functions through the library website. 
-            You will only need your Hawk Card to check out materials in person at the Galvin 
-            Library or request materials through interlibrary loan. Let's take a look at how to get started.
-        </p>
+            <!-- Descriptive statistics -->
+        <h2 id="descriptive-statistics">Run descriptive statistics</h2>
 
-        <h3 id="myiit-library">Using myIIT to Access the Library Website</h3>
-        <p>Although you can search for research materials through the library website directly, the best way to access
-             the library website is to first log on to myIIT. Once you are logged in, 
-             you will see a link to "Library Resources." Try logging in, and clicking on that link.
-        </p>
+        <!-- SIDEBAR -->
+        
+        <p><b>Analyzing descriptive statistics may lead you to ask new questions. For example, perc_enjoy is much higher on average than perc_usefulness, which also has a large variance. This suggests that a segment of users may not have considered the system useful even though they enjoyed using it.</b></p>
 
-        <!-- INSERT IMAGE HERE: research2.jpg CAPTION: "The Library Services icon leads you to the library search website."-->
+        <!-- END SIDEBAR -->
 
-        <p>Accessing the library website through myIIT allows a proxy server connection which will enable you to access most 
-            resources without reentering your login information.<br><br>Once you are at the library website, 
-            you will see a variety of search options available on the left-hand navigation bar.
-            <br><br>The best place to begin researching is in a scholarly database that allows you 
-            to search multiple scholarly journals at once, such as Academic Search Premiere (EBSCO).
-        </p>
+        <p>Run descriptive (summary) statistics on the dataset and output results in a new spreadsheet. If necessary, rearrange columns so that data requiring summary, those with continuous values, are adjacent. (In the spreadsheet, the continuous values of perc_enjoy, perc_usefulness, and perc_ease_of_use are already adjacent.)<br>Write down the "input range" (i.e. H2:J26) of the data requiring summary, making sure not to include variable labels.</p>
+        <ol>
+            <li>Go to <b>Tools > Add-Ins</b>... and make sure <b>Analysis ToolPak</b> is checked. Click OK.</li>
+            <li>Go to <b>Tools > Data Analysis</b> and select <b>Descriptive Statistics</b>. Click OK.</li>
+            <li>Enter the input range in the blank and check <b>Summary Statistics</b>. Click OK.</li>
+        </ol>
+        <p>The descriptive statistics summary will output in a new sheet. Rename this spreadsheet Descriptive_Stats. Label the output according to the variables. For example, <em>Column 1</em> should be <em>perc_enjoy</em>. Your Descriptive_Stats spreadsheet should now look like Figure 4.</p>
+        <figure>
+            <img src="images/datalesson_fig4.png" alt="Data Lesson Figure 4">
+            <figcaption>Excel will not run descriptive statistics with non-numeric characters, so the variable labels must be re-entered.</figcaption>
+        </figure>
+        <p>Analyzing descriptive statistics is a great way to start appraising a dataset before running inferential statistics. What insights about the dataset can you glean from the summary statistics for <em>perc_usefulness</em>> and <em>perc_ease_of_use</em>?</p>
+
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a class="page-link" href="research.html" tabindex="-1">Previous</a>
+              <li class="page-item disabled">
+                <a class="page-link" href="data-analysis.html" tabindex="-1">Previous</a>
               </li>
-              <li class="page-item"><a class="page-link" href="getting-started.html">Getting Started</a></li>
-              <li class="page-item"><a class="page-link" href="research-timelines.html">Research Timelines</a></li>
-              <li class="page-item"><a class="page-link" href="requesting-resources.html">Requesting Resources</a></li>
-              <li class="page-item"><a class="page-link" href="local-libraries.html">Local Libraries</a></li>
-              <li class="page-item"><a class="page-link" href="internet-resources.html">Web Resources</a></li>
+              <li class="page-item"><a class="page-link" href="data-analysis.html">Data Analysis</a></li>
+              <li class="page-item"><a class="page-link" href="descriptive-stats.html">Descriptive Statistics</a></li>
+              <li class="page-item"><a class="page-link" href="inferential-stats.html">Inferential Statistics</a></li>
               <li class="page-item">
-                <a class="page-link" href="research-timelines.html">Next</a>
+                <a class="page-link" href="inferential-stats.html">Next</a>
               </li>
             </ul>
-    </nav>
+        </nav>
 
     </main>
 
@@ -101,4 +96,3 @@
         <p>Ryan Manthy | COM421 Sustainable Information Project </p>
     </footer>
 </body>
-    

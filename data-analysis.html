@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">Research Paper Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="topic.html">Topic <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="research.html">Research <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="references.html">References <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="style.html">Style <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="layout.html">Layout <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="modality.html">Modality <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="professionalization.html">Professionalization <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main class="site-container">
+
+    <!-- Format data for analysis -->
+    <h2>Format data for analysis</h2>
+    <p>
+        Make sure the computer you are working on has Microsoft Excel installed. Open the document ToolBox_DataLesson.xls [[[NOTE: NEED LINK TO DOWNLOAD TUTORIAL EXCEL FILE]]] in Excel and follow along with the lesson, taking action as instructed.
+        In the Raw_Dataset spreadsheet, the name of each variable has been entered in the first row of each column.<br>
+    </p>
+    <ol>
+        <li>Each variable name must be different from other variable names.</li>
+        <li>The first variable (in column A) is a <b>unique identifier</b>.</li>
+        <li>Variable names must start with a letter (not numbers or special characters), so change <em>4tutorial_types to tutorial_types</em>.</li>
+        <li>Name variables so that they are intuitive to you. Therefore, change <em>use</em> and <em>useful</em> to <em>perc_ease_of_use</em> and <em>perc_usefulness</em>>, respectively.</li>
+        <li>Your spreadsheet should look like Figure 1, and it should now be readily apparent that Column F refers to <em>Perceived Usefulness</em> and Column G refers to <em>Perceived Ease of Use</em>.</li>
+    </ol>
+    <figure>
+        <img src="images/datalesson_fig3.png" alt="Data Lesson Figure 3">
+        <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+    </figure>
+    <p><br><br>Data values, or rows, have been input for each subject in the experiment.</p>
+    <ol>
+        <li>Decide on input conventions and stick to them. In gender, change the "female" value to "F".</li>
+        <li>Separate data into component values whenever possible by adding new columns. For example, tasks_completed values (Y/Y/N) can be broken up into three components. So, add columns <em>task1, task2, and task3</em>, and reformat values appropriately.</li>
+        <li>Double-check to ensure no data entry errors have been made, then delete the old <em>tasks_completed</em> column.</li>
+        <li>Your Raw_Dataset spreadsheet should now look like Figure 2.</li>
+    </ol>
+    <figure>
+        <img src="images/datalesson_fig2.png" alt="Data Lesson Figure 2">
+        <figcaption>Values for each variable are entered in a consistent format.</figcaption>
+    </figure>
+    <p><br>Replace categorical data values with "0" or "1" (0=no, 1=yes) to indicate whether or not the value is represented for the given subject/item. This makes the categorical values <em>dichotomous</em>>, which gives the researcher maximum flexibility in testing for relationships or correlations.</p>
+
+    <!-- SIDEBAR -->
+
+    <p><b>Dichotomous variables allow for the easy isolation of characteristics for analysis. For example, separating experience levels allows the researcher to test in PASW whether subjects with low experience have perceived ease of use scores significantly different from those with medium and high experience levels.</b></p>
+
+    <!-- END SIDEBAR -->
+
+    <ol>
+        <li>Copy the Raw_Dataset values into the Sheet2 tab. Rename this sheet Formatted_Data.</li>
+        <li>In the Formatted_Data sheet, add new columns with <b>Insert > Columns</b> for each distinct value in categorical data columns <em>(tutorial_types, gender, exp_level, task1, task2, and task3)</em>>. You do not have to add a new column for <em>task1, task2, and task3</em>> because their values are already dichotomous.</li>
+        <li>Rename columns according to each possible categorical value. Copy and paste the values from the original column.</li>
+        <li>Replace dichotomous data values with "0" or "1" (0=no, 1=yes) using the replace function: <b>Edit > Replace</b>.</li>
+        <li>Your Formatted_Data spreadsheet should now look like Figure 3.</li>
+    </ol>
+    <figure>
+        <img src="images/datalesson_fig3 (1).png" alt="Data Lesson Figure 3">
+        <figcaption>Tutorial type, gender, experience, and task categorical values have been formatted as dichotomous variables.</figcaption>
+    </figure>
+    
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="data.html" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="data-analysis.html">Data Analysis</a></li>
+          <li class="page-item"><a class="page-link" href="descriptive-stats.html">Descriptive Statistics</a></li>
+          <li class="page-item"><a class="page-link" href="inferential-stats.html">Inferential Statistics</a></li>
+          <li class="page-item">
+            <a class="page-link" href="descriptive-stats.html">Next</a>
+          </li>
+        </ul>
+    </nav>
+
+    
+    </main>
+
+    <footer>
+        <p>Ryan Manthy | COM421 Sustainable Information Project </p>
+    </footer>
+</body>
