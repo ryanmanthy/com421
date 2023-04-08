@@ -1,39 +1,59 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        aside {
-            float: right;
-            width: 30%;
-            margin: 0 0 1em 1em;
-            padding: 1em;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li> <!-- Populate Copy -->
-                <li><a href="topic.html">Topic</a></li>
-                <li><a href="research.html">Research</a></li> <!-- Populate Copy -->
-                <li><a href="data.html">Data</a></li> <!-- Populate Copy -->
-                <li><a href="references.html">References</a></li>
-                <li><a href="style.html">Style</a></li>
-                <li><a href="layout.html">Layout</a></li>
-                <li><a href="modality.html">Modality</a></li>
-                <li><a href="professionalization.html">Professionalization</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="home.html">Research Paper Toolbox</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="topic.html">Topic <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="research.html">Research <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data.html">Data <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="references.html">References <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="style.html">Style <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="layout.html">Layout <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="modality.html">Modality <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="professionalization.html">Professionalization <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
+
+    <main class="site-container">
     <h1>How to organize and analyze research data</h1>
 
     <!-- SIDEBAR -->
@@ -180,5 +200,5 @@
     <!-- Test your knowledge -->
     <h2>Test your knowledge</h2>
     <p>Now that you've finished the lesson, please complete a short quiz to test your understanding of formatting research datasets for comprehensive statistical analysis.</p>
-
+    </main>
 </body>
