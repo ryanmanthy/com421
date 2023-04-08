@@ -83,3 +83,8 @@ footer {
     justify-content: space-between;
     padding: 1em 3em;
 }
+
+nav.pagination {
+    display: flex;
+    justify-content: center;
+  }
