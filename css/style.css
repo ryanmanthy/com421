@@ -13,6 +13,7 @@ main {
   }
 
 
+/* Used ChatGPT as a reference for styling the body */
 body::before,
 body::after {
   content: "";
@@ -87,4 +88,19 @@ footer {
 nav.pagination {
     display: flex;
     justify-content: center;
+  }
+
+
+p.sidebar {
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    padding: 1em;
+    margin: 1em;
+  }
+
+aside.sidebar {
+    background-color: #ffe6e6;
+    border: 1px solid #ffcccc;
+    padding: 1em;
+    margin: 1em;
   }
